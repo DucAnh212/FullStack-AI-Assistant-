@@ -1,0 +1,4 @@
+Prompt: Để check Quality câu prompt
+Đánh giá câu trả lời sau theo tiêu chí: độ chính xác, đầy đủ, dễ hiểu, có ví dụ. Cho điểm từ 1-10 và giải thích ngắn.
+Câu trả lời: {ai_response}
+--Sau đó nếu điểm < 7, yêu cầu AI trả lời lại với prompt cải tiến.
