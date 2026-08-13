@@ -46,8 +46,8 @@ FullStack AI Assistant is a **self-hosted application** that connects to state-o
 ---
 
 ## 🏗️ System Architecture
+<img width="7176" height="310" alt="deepseek_mermaid_20260813_319c6c" src="https://github.com/user-attachments/assets/05ee2f5a-34d5-494a-ba10-88f2c0a280b6" />
 
-![Architecture Diagram](docs/architecture.png) *(you can generate this with Mermaid or draw.io)*
 
 ```mermaid
 graph TD
