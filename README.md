@@ -48,15 +48,3 @@ FullStack AI Assistant is a **self-hosted application** that connects to state-o
 ## 🏗️ System Architecture
 <img width="7176" height="310" alt="deepseek_mermaid_20260813_319c6c" src="https://github.com/user-attachments/assets/05ee2f5a-34d5-494a-ba10-88f2c0a280b6" />
 
-
-```mermaid
-graph TD
-    A[User / Developer] --> B[Dashboard (Streamlit)]
-    A --> C[CLI / API Client]
-    B --> D[FastAPI Server]
-    C --> D
-    D --> E[Security Layer]
-    E --> F[Reasoning Engine]
-    F --> G[AI Models (Claude / GPT-4)]
-    D --> H[(Encrypted SQLite Database)]
-    D --> I[Project Context Loader]
