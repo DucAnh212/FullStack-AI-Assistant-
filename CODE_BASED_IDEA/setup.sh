@@ -354,5 +354,10 @@ echo "  1. Edit config/.env with your real API keys"
 echo "  2. source venv/bin/activate"
 echo "  3. Run server: uvicorn api.server:app --host 0.0.0.0 --port 8000"
 echo "  4. Run dashboard (new terminal): streamlit run dashboard/app.py --server.port 8501 --server.address 0.0.0.0"
+
+
+--for running:
+chmod +x setup.sh
+./setup.sh
 echo "============================================"
 EOF
