@@ -1,0 +1,9 @@
+	Câu hỏi	-> Kỳ vọng
+"Làm sao để undo commit cuối cùng mà vẫn giữ thay đổi?"	-> git reset --soft HEAD~1 và giải thích.
+"Sự khác nhau giữa git merge và git rebase?" -> So sánh ưu/nhược, khi nào dùng.
+"Cách xử lý conflict khi merge branch feature vào main?" -> Hướng dẫn từng bước, dùng git status, git diff, sửa file, git add, git commit.
+Làm thế nào để tạo Pull Request chất lượng trên GitHub?" -> Mô tả title, description, checklist, review.
+"Cách tìm commit gây ra lỗi bằng git bisect?"	-> Giải thích quy trình git bisect start, git bisect good/bad.
+"Tôi bị memory leak trong React, làm sao debug?" -> Phân tích nguyên nhân, dùng DevTools, cleanup function.
+"Tối ưu API chậm do query database lớn?" -> Đề xuất indexing, caching, pagination.
+"Thiết kế microservices cho hệ thống bán hàng?" -> Đưa ra kiến trúc, communication, database per service.
