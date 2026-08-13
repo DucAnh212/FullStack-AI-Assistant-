@@ -7,3 +7,17 @@ Làm thế nào để tạo Pull Request chất lượng trên GitHub?" -> Mô t
 "Tôi bị memory leak trong React, làm sao debug?" -> Phân tích nguyên nhân, dùng DevTools, cleanup function.
 "Tối ưu API chậm do query database lớn?" -> Đề xuất indexing, caching, pagination.
 "Thiết kế microservices cho hệ thống bán hàng?" -> Đưa ra kiến trúc, communication, database per service.
+
+-- thử nghiệm: 
+--câu hỏi : loại task liên quan tới git_github. Tôi muốn hoàn tác commit cuối cùng nhưng giữ nguyên thay đổi, làm thế nào?. Hiện tôi đang Đang ở branch feature, chưa push lên remote
+Trợ lý sẽ trả lời theo 5 bước,:
+
+Phân tích: Bạn muốn undo commit nhưng giữ thay đổi ở working directory, chưa push nên an toàn.
+
+Mâu thuẫn: Nếu dùng git reset --hard sẽ mất thay đổi, không đúng yêu cầu.
+
+Tổng hợp: Có 2 cách: git reset --soft HEAD~1 (giữ thay đổi trong staging) hoặc git reset HEAD~1 (giữ thay đổi ở working dir).
+
+Phán quyết: Dùng git reset --soft HEAD~1 vì giữ nguyên trạng thái đã add, dễ commit lại.
+
+Giải thích: Lệnh này di chuyển con trỏ HEAD về commit trước, nhưng giữ index và working tree. Bạn có thể kiểm tra bằng git status, sau đó commit lại.
